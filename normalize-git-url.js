@@ -17,7 +17,7 @@ module.exports = function normalize (u) {
 
   // figure out what we should check out.
   var checkout = parsed.hash && parsed.hash.substr(1) || "master"
-  parsed.hash = ""
+  parsed.hash = null
 
   u = url.format(parsed)
   return {
